@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>LiaPlus AI</title>
+</head>
+    <body>
+        <div>          
+            <div><h1>Sign Up</h1></div>
+            <form action="/user/signup" method="post">
+                
+                <label for="FullName"> Full Name </label>
+                <input type="text" placeholder="Full Name" name="fName">
+                
+                <label for="UserName"> User Name </label>
+                <input type="text" placeholder="User Name" name="userName">
+                
+                <label for="Email"> Email </label>
+                <input type="email" placeholder="E-Mail" name="email">
+                
+                <label for="password"> Password</label>
+                <input type="password" placeholder="Password" name="password">
+                
+                <label for="ConfirmPssword"> Confirm Password </label>
+                <input type="password" placeholder="Confirm Password" name="confirmPassword">
+                
+                <button type="submit">Submit</button>
+
+                <p><%= Error %></p>
+            </form>
+            <p> Already have an Account <a href="/user/login">Log-in</a></p>
+        </div> 
+</body>
+</html>

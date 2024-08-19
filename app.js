@@ -19,4 +19,11 @@ app.use(bodyParser.urlencoded({
 }))
 app.set("view engine","ejs")
 
+app.get("/",async (req,res)=>{
+    res.redirect("/user")
+})
+import userRouter from './routes/user.routes.js'
+
+app.use('/user',userRouter)
+
 export default app
